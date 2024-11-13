@@ -47,7 +47,7 @@
                     </div>
                     <div class="card-body text-center">
                         <p class="card-text">Atur akun pengguna untuk mengakses platform dengan berbagai peran dan hak akses.</p>
-                        <a href="{{ route('user.index')}}" class="btn btn-info">Kelola Akun</a>
+                        <a href="#" class="btn btn-info">Kelola Akun</a>
                     </div>
                 </div>
             </div>

@@ -11,12 +11,12 @@ class AkunController extends Controller
     public function index()
     {
         $users = User::all(); // Fetch all records from users table
-        return view('akun.index', compact('users'));
+        return view('user.index', compact('users'));
     }
 
     public function create()
     {
-        return view('akun.create');
+        return view('user.create');
     }
 
     public function store(Request $request)
@@ -38,13 +38,13 @@ class AkunController extends Controller
             'role' => $request->role,
         ]);
 
-        return redirect()->route('akun.index')->with('success', 'User berhasil ditambahkan');
+        return redirect()->route('user.index')->with('success', 'User berhasil ditambahkan');
     }
 
     public function edit($id)
     {
         $user = User::findOrFail($id); // Use User model to find the record
-        return view('akun.edit', compact('user'));
+        return view('user.edit', compact('user'));
     }
 
     public function update(Request $request, $id)
@@ -52,7 +52,7 @@ class AkunController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email,' . $id,
-            'role' => 'required|string|in:admin,akun,kasir',
+            'role' => 'required|string|in:admin,user,kasir',
             'password' => 'nullable|string|min:8',
         ]);
 
@@ -70,12 +70,12 @@ class AkunController extends Controller
 
         $user->update($userData);
 
-        return redirect()->route('akun.index')->with('success', 'User berhasil diupdate');
+        return redirect()->route('user.index')->with('success', 'User berhasil diupdate');
     }
 
     public function destroy($id)
     {
         User::findOrFail($id)->delete();
-        return redirect()->route('akun.index')->with('success', 'User berhasil dihapus');
+        return redirect()->route('user.index')->with('success', 'User berhasil dihapus');
     }
 }

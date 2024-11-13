@@ -1,12 +1,11 @@
 @extends('layouts.template')
 
 @section('content')
-
     @if(Session::get('success'))
-        <div class="alert alert-success"> {{Session::get('success') }}</div>
+        <div class="alert alert-success">{{ Session::get('success') }}</div>
     @endif
     @if(Session::get('deleted'))
-        <div class="alert alert-warning"> {{Session::get('deleted') }}</div>
+        <div class="alert alert-warning">{{ Session::get('deleted') }}</div>
     @endif
 
     <div class="card p-5 mt-4">
@@ -20,31 +19,32 @@
                     <th>Stok</th>
                     <th>Harga Buku</th>
                     <th>Tipe Buku</th>
-                    <th class="text-center">Mau Diapain??</th>
+                    <th class="text-center">Mau Diapain?</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($bukus as $buku)
                     <tr>
-                        <td>{{ $buku['title']}}</td>
-                        <td>{{ $buku['author']}}</td>
-                        <td>{{ $buku['stock']}}</td>
-                        <td>{{ $buku['price']}}</td>
-                        <td>{{ $buku['type']}}</td>
-                        <td class="d-flex justify-content-center">
-                            <a href="{{ route('buku.edit', $buku['id'])}}" class="btn btn-primary me-3">Edit</a>
-                            <form action="{{ route('buku.delete', $buku['id'])}}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Hapus</button>
-                            </form>
+                        <td>{{ $buku['title'] }}</td>
+                        <td>{{ $buku['author'] }}</td>
+                        <td>{{ $buku['stock'] }}</td>
+                        <td>{{ $buku['price'] }}</td>
+                        <td>{{ $buku['type'] }}</td>
+                        <td class="text-center">
+                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                <a href="{{ route('buku.edit', $buku['id']) }}" class="btn btn-primary m-0">Edit</a>
+                                <form action="{{ route('buku.delete', $buku['id']) }}" method="POST" class="m-0 p-0">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                </form>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
     </div>
-
 @endsection
 
 <style>

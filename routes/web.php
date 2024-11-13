@@ -5,7 +5,7 @@ use App\Models\Buku;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AkunController;
 
-Route::get('/',[BukuController::class,'showhome']);
+Route::get('/',[BukuController::class,'showhome'])->name('return');
 
 Route::prefix('/buku')->name('buku.')->group(function(){
 

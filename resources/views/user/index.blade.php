@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-  <h2 class="mb-4">Kelola Akun Pengguna</h2>
+  <h2 class="mb-4" style="color: #03fec8">Kelola Akun Pengguna</h2>
   <a href="{{ route('user.create') }}" class="btn btn-warning mb-3">Tambah Pengguna</a>
 
   @if (session('success'))

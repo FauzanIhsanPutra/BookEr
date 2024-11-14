@@ -41,7 +41,6 @@
 </div>
 
 <style>
-    /* Style for the table */
     .table {
         color: #333;
         background-color: #f8f9fa;
@@ -56,7 +55,7 @@
         transition: background-color 0.3s ease, font-size 0.3s ease;
     }
     .btn-primary:hover {
-        background-color: #03fec8; /* Matches navbar hover effect */
+        background-color: #03fec8;
         color: black;
         font-size: 1.1rem;
     }

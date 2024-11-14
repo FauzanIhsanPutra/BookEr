@@ -19,7 +19,6 @@
             transition: color 0.3s, font-size 0.3s;
         }
 
-        /* Dropdown menu styling and initial state for animation */
         .dropdown-menu {
             background-color: #6a11cb;
             opacity: 0;
@@ -32,19 +31,16 @@
             color: #fff;
         }
 
-        /* Toggler button hover effect */
         .navbar-toggler:hover {
             background-color: #6a11cb;
         }
 
-        /* Body background */
         body {
             background: linear-gradient(135deg, #c1dfc4, #deecdd);
             min-height: 100vh;
             font-family: 'Arial', sans-serif;
         }
 
-        /* Form card container */
         .card {
             background-color: #f9f9f9;
             border-radius: 8px;
@@ -84,7 +80,6 @@
             background-color: #357ab8;
         }
 
-        /* Table styling */
         table {
             width: 100%;
             margin-top: 30px;

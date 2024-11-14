@@ -58,9 +58,9 @@
     <style>
         /* Button hover styling to match navbar link hover effect */
         .btn-primary:hover {
-            background-color: aqua !important; /* Matches navbar link hover background */
+            background-color: aqua !important;
             color: black !important;
-            font-size: 1.1rem; /* Slightly increases font size on hover */
+            font-size: 1.1rem;
             transition: all 0.3s ease;
         }
     </style>

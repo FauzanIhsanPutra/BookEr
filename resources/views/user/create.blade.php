@@ -6,14 +6,13 @@
             opacity: 0.5;
         }
 
-        /* Button styling to match navbar hover effect */
         .btn-primary {
             background-color: #0457e8;
             transition: background-color 0.3s ease, font-size 0.3s ease;
         }
         
         .btn-primary:hover {
-            background-color: #03fec8; /* Matches the hover color in navbar */
+            background-color: #03fec8; 
             color: black;
             font-size: 1.1rem;
         }

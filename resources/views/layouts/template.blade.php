@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="{{ asset('assets/images/book_icon.png') }}" type="image/png">
     <style>
-        /* Navbar styling */
         .navbar {
             background: linear-gradient(45deg, #5908ae, #0457e8, #00cffd, #00ff73);
             color: black;
@@ -16,9 +15,9 @@
         .navbar-brand, .nav-link {
             color: white !important;
             transition: color 0.3s ease-in-out;
-        }
+        }   
         .nav-link:hover {
-            color: #03fec8 !important;
+            color: #15ff00 !important;
             font-size: 1.2rem;
             font-weight: bold;
             background-color: rgba(237, 49, 93, 0.522);
@@ -26,7 +25,6 @@
             height: 48px;
         }
 
-        /* Dropdown menu styling and initial state for animation */
         .dropdown-menu {
             background-color: #6a11cb;
             opacity: 0;
@@ -39,12 +37,10 @@
             color: #fff;
         }
 
-        /* Toggler button hover effect */
         .navbar-toggler:hover {
             background-color: #6a11cb;
         }
 
-        /* Container styling */
         .container {
             transition: background-color 0.5s ease;
             background-color: #13304d;
@@ -52,7 +48,6 @@
             padding: 20px;
         }
 
-        /* Body background */
         body {
             background: linear-gradient(135deg, #c1dfc4, #deecdd);
             min-height: 100vh;

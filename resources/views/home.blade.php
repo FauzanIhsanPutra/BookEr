@@ -13,7 +13,7 @@
 
     <div class="container mt-4">
         <div class="row">
-            <!-- Feature 1: Book List -->
+
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header bg-primary text-white">
@@ -26,7 +26,6 @@
                 </div>
             </div>
 
-            <!-- Feature 2: Add Book -->
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header bg-success text-white">
@@ -39,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- Feature 3: Account Management -->
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header bg-info text-white">
@@ -56,15 +54,16 @@
 @endsection
 
 <style>
-    /* Hover animation for buttons */
+    
     .btn {
-        transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+        transition: all 0.3s ease-in-out; 
     }
 
     .btn:hover {
-        transform: scale(1.1); /* Slightly increase the button size */
-        background-color: #91ff00; /* Change background color to gold */
-        box-shadow: 0 4px 8px rgba(0.4, 0.4, 0.4, 0.4); /* Add a shadow effect */
-        color: #000; /* Change text color to black for contrast */
-    }
+    transform: scale(1.1); 
+    background-color: #91ff00; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    color: #000;
+    transition: transform 0.1s, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out, color 0.1s ease-in-out;
+}
 </style>

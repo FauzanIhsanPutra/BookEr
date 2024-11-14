@@ -32,7 +32,6 @@
                     <option value="admin" {{ $user->role == 'admin' ? 'selected' : '' }}>Admin</option>
                     <option value="user" {{ $user->role == 'user' ? 'selected' : '' }}>User</option>
                     <option value="kasir" {{ $user->role == 'kasir' ? 'selected' : '' }}>kasir</option>
-                    <!-- Add other roles as needed -->
                 </select>
             </div>
         </div>

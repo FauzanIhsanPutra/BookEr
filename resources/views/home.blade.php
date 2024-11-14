@@ -6,9 +6,9 @@
             <div class="alert alert-danger">{{ Session::get('failed') }}</div>
         @endif
         <h1 class="display-4 text-white">
-            Selamat datang di <span style="color: #800000; font-weight: bold;">Book</span><span style="color: #2d6a4f; font-weight: bold;">Er</span>!
+            Selamat datang di <span style="color: #ff0000; font-weight: bold;">Book</span><span style="color: #76ffc1; font-weight: bold;">Er</span>!
         </h1>
-        <p class="lead text-white">Platform manajemen buku Anda untuk kemudahan pengelolaan data buku dan akun.</p>
+        <p class="lead text-white">Platform manajemen buku Anda untuk kemudahan pengelolaan data buku dan akun. </p>
     </div>
 
     <div class="container mt-4">
@@ -47,7 +47,7 @@
                     </div>
                     <div class="card-body text-center">
                         <p class="card-text">Atur akun pengguna untuk mengakses platform dengan berbagai peran dan hak akses.</p>
-                        <a href="#" class="btn btn-info">Kelola Akun</a>
+                        <a href="{{ route('user.index')}}" class="btn btn-info">Kelola Akun</a>
                     </div>
                 </div>
             </div>

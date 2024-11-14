@@ -21,8 +21,9 @@
             color: #03fec8 !important;
             font-size: 1.2rem;
             font-weight: bold;
-            background-color: transparent;
-            transition: color 0.3s, font-size 0.3s;
+            background-color: rgba(153, 205, 50, 0.522);
+            transition: color 0.5s, font-size 0.4s;
+            height: 48px;
         }
 
         /* Dropdown menu styling and initial state for animation */
@@ -63,7 +64,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="#" style="font-size: 1.8rem; font-weight: bold;">
-            <span style="color: #800000;"><img src="{{ asset('assets/images/buku_icon.png')}}" alt="">Book</span><span style="color: #2d6a4f;">Er</span>
+            <span style="color: #ff0000;"><img src="{{ asset('assets/images/buku_icon.png')}}" alt="">Book</span><span style="color: #76ffc1;">Er</span>
         </a>    
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

@@ -21,7 +21,7 @@
             color: #03fec8 !important;
             font-size: 1.2rem;
             font-weight: bold;
-            background-color: rgba(153, 205, 50, 0.522);
+            background-color: rgba(237, 49, 93, 0.522);
             transition: color 0.5s, font-size 0.4s;
             height: 48px;
         }
